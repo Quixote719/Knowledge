@@ -1,0 +1,72 @@
+http://www.runoob.com/mysql/mysql-install.html
+https://www.cnblogs.com/Caveolae/p/7058890.html
+https://www.cnblogs.com/xiongzaiqiren/p/8970203.html
+https://blog.csdn.net/dancheren/article/details/55094471
+
+net start mysql
+mysql -u root -p
+EXIT
+
+mysql 内部命令末尾加;
+创建数据库：
+
+CREATE DATABASE DATATEST;
+SELECT host, user, authentication_string FROM user WHERE user = 'root';
+USE TESTDATA;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123';
+
+
+创建数据表：
+
+CREATE TABLE IF NOT EXISTS `runoob_tbl`(
+   `runoob_id` INT UNSIGNED AUTO_INCREMENT,
+   `runoob_title` VARCHAR(100) NOT NULL,
+   `runoob_author` VARCHAR(40) NOT NULL,
+   `submission_date` DATE,
+   PRIMARY KEY ( `runoob_id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `ERRORTABLE`(
+   `ERR_ID` INT UNSIGNED AUTO_INCREMENT,
+   `ERROR_TYPE` VARCHAR(100) NOT NULL,
+   `IP` VARCHAR(35) NOT NULL,
+   `CREATED_BY` VARCHAR(100) NOT NULL,
+   `CREATED_TIME` DATETIME,
+   `ERROR_CONTENT` VARCHAR(5000),
+   `INFO` VARCHAR(5000),
+   PRIMARY KEY ( `ERR_ID` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO ERRORTABLE( ERROR_TYPE, IP, CREATED_BY, CREATED_TIME, ERROR_CONTENT, INFO)
+                       VALUES
+                       ( 'SYNTAX ERROR', '10.11.1.17', 'JON STEWART', '2006-11-04 12:23:00', 'sorry，wrong syntax', 'nothing');
+INSERT INTO ERRORTABLE( ERROR_TYPE, IP, CREATED_BY, CREATED_TIME, ERROR_CONTENT, INFO)
+                       VALUES
+                       ( 'ReferenceError', '10.13.1.32', 'Ellen', '2016-01-04 11:13:00', ' a is not defined', 'please double check');
+INSERT INTO ERRORTABLE( ERROR_TYPE, IP, CREATED_BY, CREATED_TIME, ERROR_CONTENT, INFO)
+                       VALUES
+                       ( 'RangeError', '14.13.1.32', 'Stephen Colbert', '2015-04-02 11:13:00', 'Invalid array length', 'sorry, exceed range');
+INSERT INTO ERRORTABLE( ERROR_TYPE, IP, CREATED_BY, CREATED_TIME, ERROR_CONTENT, INFO)
+                       VALUES
+                       ( 'ReferenceError', '10.13.4.41', 'Ellen', '2017-07-04 18:13:00', ' b is not defined', 'double check please');
+
+
+INSERT INTO ERRORTABLE( ERROR_TYPE, IP, CREATED_BY, CREATED_TIME, ERROR_CONTENT, INFO)
+                       VALUES
+                       ( 'URLError', '10.13.4.41', 'Ellen', '2017-07-04 18:13:00', 'URI malformed', 'you are not going anywhere');
+INSERT INTO ERRORTABLE( ERROR_TYPE, IP, CREATED_BY, CREATED_TIME, ERROR_CONTENT, INFO)
+                       VALUES
+                       ( 'ReferenceError', '10.53.4.41', 'Jimmy', '2016-03-19 18:13:00', ' c is not defined', 'double check please');
+INSERT INTO ERRORTABLE( ERROR_TYPE, IP, CREATED_BY, CREATED_TIME, ERROR_CONTENT, INFO)
+                       VALUES
+                       ( 'TypeError', '11.13.4.41', 'Tony Stark', '2012-07-04 18:13:00', ' 123 is not a function', 'please correct the error');
+
+
+
+SELECT * FROM ERRORTABLE HAVING ERR_ID=1;
+
+
+DELETE FROM runoob_tbl WHERE runoob_id=3;
+
+
