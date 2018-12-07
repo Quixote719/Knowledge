@@ -16,3 +16,10 @@
 
 ## Webpack
 * [Webpack](https://juejin.im/post/5abef5e96fb9a028e33b9035)
+
+## Closure
+* [closure](https://zhuanlan.zhihu.com/p/27857268)
+
+## History of Frontend(2018)
+* [history](https://juejin.im/post/5bfff265e51d45262e283608#chapter-three-one)
+
