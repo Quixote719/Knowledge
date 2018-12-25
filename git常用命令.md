@@ -118,6 +118,15 @@ Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置�
 	$ git push origin --delete [branch-name]
 	$ git branch -dr [remote/branch]
 
+	# 提交本地test分支作为远程的master分支
+	$ git push origin test:master          
+	
+	# 提交本地test分支作为远程的test分支
+	$ git push origin test:test
+	
+	#删除本地分支                
+	$ git branch -d <BranchName>       
+
 ### 六、标签 ###
 
 	# 列出所有tag
@@ -273,3 +282,5 @@ Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置�
 
 	# 生成一个可供发布的压缩包
 	$ git archive
+
+
