@@ -28,3 +28,6 @@
 
 ## Article List
 * [Article](https://juejin.im/post/5c1f01fef265da61587723f4)
+
+## JS
+* [JavaScript 原型链](https://juejin.im/entry/5883672c570c350062be16e5)
