@@ -283,4 +283,8 @@ Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置�
 	# 生成一个可供发布的压缩包
 	$ git archive
 
+	# 合并分支，处在A branch, 执行git rebase B, 将A branch的commits放到B branch的commits之后
+	$ git rebase branch
 
+	# 对本分支最新3次commits的记录进行更改，可根据git的提示合并几次commits，修改commit的信息等等
+	$ git rebase -i HEAD~3
