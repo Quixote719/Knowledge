@@ -34,7 +34,8 @@
 * [JavaScript Symbols, Iterators, Generators, Async/Await, and Async Iterators ](https://juejin.im/post/5ba99c33e51d450e9a2e2e4d)
 * [理解ES6的 Iterator, Iterable, Generator ](https://juejin.im/entry/5a151c486fb9a0450e75c34f)
 
-
 ## Promise
 * [Async/Await](https://juejin.im/entry/58df68498d6d810061488922)
 
+## Puppeteer
+* [Puppeteer](https://juejin.im/post/5d4059305188255d38489a8c#heading-16)
