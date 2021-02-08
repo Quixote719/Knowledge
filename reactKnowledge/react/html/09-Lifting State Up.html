@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>状态提升</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdn.bootcss.com/prop-types/15.6.1/prop-types.js"></script>
+    <script type="text/babel">
+        class Input1 extends React.Component {
+            constructor(props) {
+                super(props);
+                {/* 数据可以不再保存在子组件的 state 当中*/}
+                {/*  this.state = { content: '' };*/}
+                this.handleChange = this.handleChange.bind(this)
+            }
+
+            handleChange(e) {
+                {/*通过 props 获取父组件的 setState（修改数据的方法）
+                   传入一个参数（新的数据）*/}
+                this.props.onContentChange(e.target.value)
+            }
+
+
+            render() {
+                {/*通过 props 获取父组件的 state（数据） */}
+                return (
+                    <input type='text' value={ this.props.content } onChange={ this.handleChange } />
+                )
+            }
+        }
+        class Input2 extends React.Component {
+            constructor(props) {
+                super(props);
+                {/* 数据可以不再保存在子组件的 state 当中*/}
+                {/*  this.state = { content: '' };*/}
+                this.handleChange = this.handleChange.bind(this)
+            }
+
+            handleChange(e) {
+                {/*通过 props 获取父组件的 setState（修改数据的方法）
+                   传入一个参数（新的数据）*/}
+                this.props.onContentChange(e.target.value)
+            }
+
+
+            render() {
+                {/*通过 props 获取父组件的 state（数据） */}
+                return (
+                    <input type='text' value={ this.props.content } onChange={ this.handleChange } />
+                )
+            }
+        }
+
+        class AllInput extends React.Component {
+            constructor(props) {
+                super(props);
+                {/* 在父组件中添加 state 对象，用于保存数据  */}
+                this.state = { content: '' };
+                this.handleContentChange = this.handleContentChange.bind(this)
+            }
+
+            // 定义修改 state 的方法，通过 props 传递给子组件使用
+            // 接收一个参数（新的数据）
+            handleContentChange(newContent) {
+                this.setState({ content: newContent })
+            }
+
+            render() {
+                // 通过 props 将 state 和修改 state 的方法都传递给子组件
+                return (
+                    <div>
+                        子组件1： <Input1 content={ this.state.content } onContentChange={ this.handleContentChange }/>
+                        <br /><br />
+                        子组件2： <Input2 content={ this.state.content } onContentChange={ this.handleContentChange }/>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(<AllInput />,document.getElementById('app')
+        )
+    // 组件1和2各自的内容保存在各自的 state 当中，如何实现数据共享？
+    // 解决方法：状态提升，即将两个组件需要共享的数据保存在共同的父组件中，然后子组件通过 props 获取父组件数据
+    </script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>

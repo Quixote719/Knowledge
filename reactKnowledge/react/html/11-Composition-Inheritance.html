@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdn.bootcss.com/prop-types/15.6.1/prop-types.js"></script>
+    <script type="text/babel">
+        class App extends  React.Component{
+            constructor(props) {
+                super(props);
+                this.state = {
+                    changeText:"我是初始值,"
+                };
+            }
+        //    改变初始值
+            onClick = () => {
+                this.setState({
+                    changeText: "改变了初始值"
+                });
+            };
+            Reset = () => {
+                this.setState({
+                    changeText: "我是初始值"
+                });
+            };
+            render(){
+                const {changeText } = this.state;
+                return(
+                    <div style={{backgroundColor:"red",height:"45rem",width:"50rem"}}>
+                        <div style={{fontSize:"2rem",marginBottom: "10px"}}>
+                        我是组件传值title
+                        </div>
+                        <div style={{color:"blue"}}>
+                          我是页面层changeText:{this.state.changeText}
+                        </div>
+                        {/*组件*/}
+                        <Fourth onClick={this.onClick}
+                                Reset={this.Reset}
+                                changeText={changeText}/>
+                    </div>
+                )
+            }
+        }
+    //    组件1
+        class First extends React.Component{
+            render(){
+                return(
+                    <div style={{backgroundColor:"green",height:"8rem",width:"35rem"}}>
+                        <p>我是组件1的文字：{this.props.changeText}</p>
+                        <button type='default'
+                                onClick={this.props.onClick}
+                                style={{marginBottom:'10px'}}>First</button>
+                    </div>
+                )
+            }
+        }
+    //    组件2
+        class Second extends  React.Component{
+            render(){
+                return(
+                    <div style={{backgroundColor:"yellow",height:"20rem",width:"40rem"}}>
+                        <p>我是组件2的文字：{this.props.changeText}</p>
+                        <button type="primary"
+                                onClick={this.props.onClick}
+                                style={{marginBottom:'10px'}}>
+                            Second</button>
+                        <First changeText={this.props.changeText}
+                               onClick={this.props.onClick}/>
+                    </div>
+                )
+            }
+        }
+    //    组件3
+        class Third extends React.Component{
+            render(){
+                return(
+                    <div style={{backgroundColor:"grey",height:"28rem",width:"42rem"}}>
+                        <p> 我是组件3的文字：{this.props.changeText}</p>
+                        <button type="primary"
+                                onClick={this.props.onClick}
+                                style={{marginBottom:'10px'}}>
+                            Third</button>
+                        <Second changeText = {this.props.changeText}
+                                onClick={this.props.onClick}/>
+                    </div>
+                )
+            }
+        }
+    //    组件4
+        class Fourth extends React.Component{
+            render(){
+                return(
+                    <div  style={{backgroundColor:"pink",height:"35rem",width:"45rem"}}>
+                        <p>我是组件4的文字：{this.props.changeText}</p>
+                        <button type="primary"
+                                onClick={this.props.onClick}
+                                style={{marginBottom:"10px"}}>
+                            Fourth</button>
+                        <button type="default"
+                                onClick={this.props.Reset}
+                                style={{marginLeft:"30px"}}>
+                            Reset </button>
+                        <Third changeText = {this.props.changeText}
+                               onClick={this.props.onClick}/>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(<App/>,document.getElementById("app"));
+    </script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>

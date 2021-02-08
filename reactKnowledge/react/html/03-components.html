@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工厂模式组件</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+        //1、定义组件
+    //方式1：工厂函数组件
+        function MyComponent(props) {
+            return <h2>工厂函数组件（{props.name}）</h2>
+        }
+        const element1 = <MyComponent name="简单组件"/>;
+    //    方式2：ES6类组件
+        class MyComponent2 extends React.Component{
+            render(){
+                return <h2>ES6类组件（{this.props.name}）</h2>
+            }
+        }
+        const element2 = <MyComponent2 name="复杂组件"/>;
+    //    2、渲染组件标签
+        ReactDOM.render(element1,document.getElementById('app'));
+        ReactDOM.render(element2,document.getElementById('app2'))
+    </script>
+</head>
+<body>
+<div id="app"></div>
+<div id="app2"></div>
+</body>
+</html>

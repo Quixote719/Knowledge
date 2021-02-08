@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello React!</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+     class MyComponent extends React.Component{
+
+         constructor(props) {
+             super(props);
+             this.showInput = this.showInput.bind(this);
+             this.handleBlur = this.handleBlur.bind(this);
+         }
+         showInput(){
+             const input = this.refs.content;
+             // alert(input.value);
+             alert(this.input.value)
+         }
+         handleBlur(event){
+             alert(event.target.value)
+         }
+         render(){
+             return(
+                 <div>
+                     // <input type="text"  ref="content"/><br/><br/>
+                     <input type="text"  ref={input => this.input = input}/><br/><br/>
+                     <button onClick={this.showInput}>提示输入</button><br/><br/>
+                     <input type="text" placeholder="失去焦点提示内容" onBlur={this.handleBlur}/>
+                 </div>
+             )
+         }
+     }
+     ReactDOM.render(<MyComponent/>,document.getElementById("app"))
+    </script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>

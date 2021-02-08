@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    isLogin: true
+                };
+                this.loginBtnClick = this.loginBtnClick.bind(this);
+            }
+            loginBtnClick() {
+                this.setState({
+                    isLogin: !this.state.isLogin
+                })
+            }
+            render() {
+                let titleJsx = null;
+                const { isLogin } = this.state;
+                const nameDisplay = isLogin ? "block": "none";
+
+                /*方式1：条件表达式*/
+                if (this.state.isLogin) {
+                    titleJsx = <h2>欢迎回来~</h2>
+                } else {
+                    titleJsx = <h2>请先登录~</h2>
+                }
+                return (
+                    <div>
+                        {titleJsx}
+                        {/*三元运算符*/}
+                        <h2>{this.state.isLogin ? "欢迎回来~": "请先登录~"}</h2>
+                        {/*&& 运算符*/}
+                        {this.state.isLogin && <h2>{"欢迎回来~"}</h2>}
+                        {/*display属性*/}
+                        <h2 style={{ display: nameDisplay }}>{"欢迎回来~"}</h2>
+                        <button onClick={ e => this.loginBtnClick()}>{this.state.isLogin ? "退出": "登录"}</button>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(<App/>,document.getElementById("app"))
+    </script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>

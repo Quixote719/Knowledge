@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表展示数据</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+// 动态展示列表数据
+//将一个数据的数字转换成一个标签的数组 -->  使用数组的map()
+        const names = ["HTML","CSS","JAVASCRIPT","VUE","REACT"];
+    //    创建虚拟dom
+    const ul = (
+        <ul>{names.map( (name,index) =><li key={index}>{name}</li>)}</ul>
+    );
+    //    渲染虚拟dom
+    ReactDOM.render(ul,document.getElementById('app'))
+    </script>
+</head>
+<body>
+<h1>前端技能列表</h1>
+<div id="app">
+</div>
+</body>
+</html>

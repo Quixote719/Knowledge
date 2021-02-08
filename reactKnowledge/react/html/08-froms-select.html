@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdn.bootcss.com/prop-types/15.6.1/prop-types.js"></script>
+    <script type="text/babel">
+        class LikesForm extends React.Component{
+
+            constructor(props) {
+                super(props);
+                //初始化状态
+                this.state = { value1: 'likes',value2: "一篇文章" };
+                //给自定义方法绑定this
+                this.handleSelectSubmit = this.handleSelectSubmit.bind(this);
+                this.handleSelectChange = this.handleSelectChange.bind(this);
+                this.handleTextareaSubmit = this.handleTextareaSubmit.bind(this);
+                this.handleTextareaChange = this.handleTextareaChange.bind(this);
+            }
+            handleSelectSubmit(event){
+               alert("my favorite fruit is: "+this.state.value1);
+                event.preventDefault(); /*组织默认事件：跳转页面*/
+            }
+            handleSelectChange(event){
+                //通过setState更新state
+                this.setState({value1:event.target.value})
+            }
+            handleTextareaSubmit(event){
+                alert("my text is: "+this.state.value2);
+                event.preventDefault(); /*组织默认事件：跳转页面*/
+            }
+            handleTextareaChange(event){
+                this.setState({value2 : event.target.value})
+            }
+            render(){
+                return(
+                    <div>
+                        <form onSubmit={this.handleSelectSubmit}>
+                            <label>
+                                <select onChange={this.handleSelectChange}>   /*受控组件*/
+                                    <option value="apple">苹果</option>
+                                    <option value="mango">芒果</option>
+                                    <option value="grapefruit">葡萄</option>
+                                    <option value="litchi">荔枝</option>
+                                </select>
+                            </label>
+                            <input type="submit" value="提交"/>
+                        </form>
+                        
+                        <form onSubmit={this.handleTextareaSubmit}>
+                            <label>
+                                文章:
+                                <textarea value={this.state.value} onChange={this.handleTextareaChange} />
+                            </label>
+                            <input type="submit" value="提交" />
+                        </form>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(<LikesForm/>,document.getElementById('app'))
+    </script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>

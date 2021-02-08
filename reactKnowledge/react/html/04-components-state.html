@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件的三大属性--state</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+       /*
+       * 自定义组件：
+       * 显示h2标题，初始文本：我是初始文本
+       * 点击标题更新文本：我是更新后的文本*/
+    //   定义组件
+        class Text extends React.Component{
+            //1、状态初始值
+            constructor(props) {
+                super(props);
+                this.state = {
+                    isShowText: true
+                };
+            //    将新增方法中的this强制绑定为组件对象
+                this.handleClick = this.handleClick.bind(this);
+            }
+            //新添加方法，默认不是组件对象，this是undefined
+            handleClick(){
+                console.log(this);
+            //    得到原有状态
+               const isShowText = !this.state.isShowText ;
+            //    更新状态
+                this.setState({ isShowText : isShowText})
+            }
+            //重写组件内方法
+            render(){
+                //读取state
+                const isShowText = this.state.isShowText;
+                return <h2 onClick={this.handleClick}>{isShowText? "初始值":"更新后"}</h2>
+            }
+        }
+    //    渲染组件
+        ReactDOM.render(<Text/>,document.getElementById("app"))
+    </script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件的三大属性--props</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdn.bootcss.com/prop-types/15.6.1/prop-types.js"></script>
+    <script type="text/babel">
+        /*
+        * 定义信息显示组件
+        * 1、没有指定性别，默认为男
+        * 2、没有指定年龄，默认为18*/
+        function PersonMsg(props) {
+            return (
+                <ul>
+                    <li>姓名：{props.name}</li>
+                    <li>年龄：{props.age}</li>
+                    <li>性别：{props.gender}</li>
+                </ul>
+            )
+        }
+        //用ES6类组件
+        class Person extends React.Component {
+            render(){
+                return(
+                    <ul>
+                        <li>姓名：{this.props.name}</li>
+                        <li>年龄：{this.props.age}</li>
+                        <li>性别：{this.props.gender}</li>
+                    </ul>
+                    )
+              }
+        }
+        //指定属性值的类型和必要性
+        PersonMsg.prototype = {
+            name : PropTypes.string.isRequired,   //name是必填项
+            age : PropTypes.number,
+        };
+        //指定默认值
+        PersonMsg.defaultProps = {
+            age:18,
+            gender:"男",
+        };
+
+
+        const p1 = {
+            name:"Nancy",
+            age:17,
+            gender:"女",
+        };
+        const p2 = {
+            name:"Jack",
+        };
+        const p3 = {
+            name:"Lisa",
+            age:16,
+        };
+        ReactDOM.render(<PersonMsg name={p1.name}
+                                   age={p1.age}
+                                   gender={p1.gender}/>,
+            document.getElementById("app1"));
+        // ReactDOM.render(<PersonMsg {...p1}/>, document.getElementById("app1"));
+
+        ReactDOM.render(<PersonMsg name={p2.name}
+                                   age={p2.age}
+                                   gender={p2.gender}/>,
+            document.getElementById("app2"));
+
+        ReactDOM.render(<Person name={p3.name}
+                                   age={p3.age}
+                                   gender={p3.gender}/>,
+            document.getElementById("app3"));
+
+    </script>
+</head>
+<body>
+<div id="app1"></div>
+<div id="app2"></div>
+<div id="app3"></div>
+</body>
+</html>
