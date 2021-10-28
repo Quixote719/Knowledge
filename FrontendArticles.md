@@ -3,6 +3,8 @@
 
 ## React
 * [React 16 更新一览](https://juejin.im/entry/59cb25756fb9a00a5d394c84)
+* [React_Hooks原理](https://juejin.cn/post/6944863057000529933#heading-8)
+* [React_Hooks详解](https://juejin.cn/post/6844903985338400782)
 
 ## Atom
 * [Atom 通过sync-settings插件实现同步功能](https://www.jianshu.com/p/fb8eda173e81)
