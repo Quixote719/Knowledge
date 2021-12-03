@@ -33,6 +33,7 @@
 
 ## JS
 * [JavaScript 原型链](https://juejin.im/entry/5883672c570c350062be16e5)
+* [JS中的this原理](https://www.zhihu.com/question/353757734/answer/964557747)
 * [JavaScript Symbols, Iterators, Generators, Async/Await, and Async Iterators ](https://juejin.im/post/5ba99c33e51d450e9a2e2e4d)
 * [理解ES6的 Iterator, Iterable, Generator ](https://juejin.im/entry/5a151c486fb9a0450e75c34f)
 
