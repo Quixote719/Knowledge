@@ -13,6 +13,9 @@
 ## Git
 * [Git rebase 用法小结](https://www.jianshu.com/p/4a8f4af4e803)
 
+## Event Loop, Macrotask, Microtask
+* [事件机制](https://zhuanlan.zhihu.com/p/78113300)
+
 ## Engineering
 * [前端工程化体系](https://juejin.im/entry/5884f012128fe1006c3b6526)
 
