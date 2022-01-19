@@ -25,9 +25,6 @@
 ## Webpack
 * [Webpack](https://juejin.im/post/5abef5e96fb9a028e33b9035)
 
-## Closure
-* [closure](https://zhuanlan.zhihu.com/p/27857268)
-
 ## History of Frontend(2018)
 * [history](https://juejin.im/post/5bfff265e51d45262e283608#chapter-three-one)
 
@@ -40,6 +37,8 @@
 * [你不知道的this](https://juejin.cn/post/6844903805587619854)
 * [JavaScript Symbols, Iterators, Generators, Async/Await, and Async Iterators ](https://juejin.im/post/5ba99c33e51d450e9a2e2e4d)
 * [理解ES6的 Iterator, Iterable, Generator ](https://juejin.im/entry/5a151c486fb9a0450e75c34f)
+* [js面试题](https://juejin.cn/post/6989433079760683022)
+* [closure](https://zhuanlan.zhihu.com/p/27857268)
 
 ## Promise
 * [Async/Await](https://juejin.im/entry/58df68498d6d810061488922)
