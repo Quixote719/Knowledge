@@ -41,7 +41,7 @@
 * [closure](https://zhuanlan.zhihu.com/p/27857268)
 
 ## Promise
-* [Async/Await](https://juejin.im/entry/58df68498d6d810061488922)
+* [Async/Await](https://juejin.cn/post/6844903487805849613)
 
 ## Puppeteer
 * [Puppeteer](https://juejin.im/post/5d4059305188255d38489a8c#heading-16)
