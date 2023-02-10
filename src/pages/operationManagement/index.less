@@ -1,0 +1,47 @@
+@import '~@/commonStyles/sharedStyle.less';
+
+@breadscrumb();
+
+.contentSection {
+    background: @contentBgColor;
+    color: @color;
+    padding: 16px;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.tabSpace {
+    background: @contentBgColor;
+    color: @color;
+}
+
+.chartSpace {
+    height: 300px;
+}
+
+.chartBlock {
+    position: relative;
+    width: 500px;
+    display: inline-block;
+    margin-right: 100px;
+    .chartTitle {
+        font-size: 18px;
+    }
+}
+
+.sectionTitle {
+    color: @theme_font_color;
+    margin-bottom: 20px;
+}
+
+.configFlexBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .configBox {
+        margin-bottom: 15px;
+        .configBoxContent {
+            color: @light_color;
+        }
+    }
+}

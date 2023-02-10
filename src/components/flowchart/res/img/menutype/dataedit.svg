@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>dag_icon_dataedit.svg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="dag_icon_dataedit.svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="路径-5" stroke-opacity="0.7" stroke="#FF3D3D" stroke-linejoin="round" transform="translate(11.292893, 11.207107) rotate(-135.000000) translate(-11.292893, -11.207107) " points="11.2928932 7.70710678 10.5151154 8.70710678 10.5151154 14.7071068 12.070671 14.7071068 12.070671 8.70710678"></polygon>
+        <path d="M7.5,13.5 L3.5,13.5 C2.94771525,13.5 2.5,13.0522847 2.5,12.5 L2.5,3.5 C2.5,2.94771525 2.94771525,2.5 3.5,2.5 L12.5,2.5 C13.0522847,2.5 13.5,2.94771525 13.5,3.5 L13.5,6.5" id="路径备份" stroke="#FF3D3D" stroke-linecap="round"></path>
+        <rect id="矩形备份-3" fill="#FF3D3D" opacity="0.699999988" x="4" y="5" width="8" height="1" rx="0.5"></rect>
+        <rect id="矩形备份-4" fill="#FF3D3D" opacity="0.699999988" x="4" y="7" width="8" height="1" rx="0.5"></rect>
+        <rect id="矩形备份-5" fill="#FF3D3D" opacity="0.699999988" x="4" y="9" width="5" height="1" rx="0.5"></rect>
+    </g>
+</svg>

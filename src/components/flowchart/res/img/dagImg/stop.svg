@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>common_stop</title>
+    <desc>Created with Sketch.</desc>
+    <g id="common_stop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.7">
+        <g id="01_Common_Btn/1_Common/common_details" transform="translate(4.000000, 4.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M7.5,0 C3.35786438,0 0,3.35786438 0,7.5 C0,11.6421356 3.35786438,15 7.5,15 C11.6421356,15 15,11.6421356 15,7.5 C15,3.35786438 11.6421356,0 7.5,0 Z M7.5,14 C3.91014913,14 1,11.0898509 1,7.5 C1,3.91014913 3.91014913,1 7.5,1 C11.0898509,1 14,3.91014913 14,7.5 C14,9.22390718 13.3151805,10.8772076 12.0961941,12.0961941 C10.8772076,13.3151805 9.22390718,14 7.5,14 Z" id="Color"></path>
+            <rect id="矩形" x="5" y="5" width="5" height="5"></rect>
+        </g>
+    </g>
+</svg>

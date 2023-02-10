@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>dag_icon_datainout.svg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="dag_icon_datainout.svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组" transform="translate(11.500000, 11.000000) rotate(-45.000000) translate(-11.500000, -11.000000) translate(9.000000, 7.000000)">
+            <circle id="椭圆形" stroke="#15EACA" cx="2.5" cy="2.5" r="2.5"></circle>
+            <rect id="矩形" fill-opacity="0.7" fill="#15EACA" x="2" y="5" width="1" height="3" rx="0.5"></rect>
+        </g>
+        <path d="M8.5,13.5 L3.5,13.5 C2.94771525,13.5 2.5,13.0522847 2.5,12.5 L2.5,3.5 C2.5,2.94771525 2.94771525,2.5 3.5,2.5 L12.5,2.5 C13.0522847,2.5 13.5,2.94771525 13.5,3.5 L13.5,7.5 L13.5,7.5" id="路径" stroke="#15EACA" stroke-linecap="round"></path>
+        <rect id="矩形" fill-opacity="0.7" fill="#15EACA" x="4" y="5" width="7" height="1" rx="0.5"></rect>
+        <rect id="矩形备份" fill-opacity="0.7" fill="#15EACA" x="4" y="7" width="3" height="1" rx="0.5"></rect>
+        <rect id="矩形备份-2" fill-opacity="0.7" fill="#15EACA" x="4" y="9" width="3" height="1" rx="0.5"></rect>
+    </g>
+</svg>

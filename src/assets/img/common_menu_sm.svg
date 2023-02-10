@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>01_Common_Btn/1_Common/common_menu_sm</title>
+    <defs>
+        <path d="M7,7 L7,10 L10,10 L10,7 L7,7 Z M7,6 L10,6 C10.5522847,6 11,6.44771525 11,7 L11,10 C11,10.5522847 10.5522847,11 10,11 L7,11 C6.44771525,11 6,10.5522847 6,10 L6,7 C6,6.44771525 6.44771525,6 7,6 Z M7,13 L7,16 L10,16 L10,13 L7,13 Z M7,12 L10,12 C10.5522847,12 11,12.4477153 11,13 L11,16 C11,16.5522847 10.5522847,17 10,17 L7,17 C6.44771525,17 6,16.5522847 6,16 L6,13 C6,12.4477153 6.44771525,12 7,12 Z M13,7 L13,10 L16,10 L16,7 L13,7 Z M13,6 L16,6 C16.5522847,6 17,6.44771525 17,7 L17,10 C17,10.5522847 16.5522847,11 16,11 L13,11 C12.4477153,11 12,10.5522847 12,10 L12,7 C12,6.44771525 12.4477153,6 13,6 Z M13,13 L13,16 L16,16 L16,13 L13,13 Z M13,12 L16,12 C16.5522847,12 17,12.4477153 17,13 L17,16 C17,16.5522847 16.5522847,17 16,17 L13,17 C12.4477153,17 12,16.5522847 12,16 L12,13 C12,12.4477153 12.4477153,12 13,12 Z" id="path-1"></path>
+    </defs>
+    <g id="01_Common_Btn/1_Common/common_menu_sm" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Color" fill-opacity="0.7" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

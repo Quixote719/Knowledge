@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icon/运行完毕</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/运行完毕" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/直方图统计备份-3">
+            <rect id="矩形" opacity="0.287876674" x="0" y="0" width="16" height="16"></rect>
+            <circle id="椭圆形" fill="#10EE8A" opacity="0.196261" cx="8" cy="8" r="7"></circle>
+            <polyline id="路径-3" stroke="#10EE8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="5.5 8.5 7.5 10.5 11 6"></polyline>
+        </g>
+    </g>
+</svg>

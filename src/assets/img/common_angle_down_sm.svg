@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>common_angle_down_sm</title>
+    <desc>Created with Sketch.</desc>
+    <g id="common_angle_down_sm" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.7">
+        <g transform="translate(6.000000, 9.000000)" fill="#FFFFFF" fill-rule="nonzero" id="Color">
+            <g transform="translate(5.506488, 3.000000) scale(-1, 1) translate(-5.506488, -3.000000) translate(0.006488, -0.000000)">
+                <path d="M0.87371002,0.16782344 C0.69025101,-0.03856795 0.37421482,-0.05715831 0.16782344,0.1263007 C-0.03856795,0.3097597 -0.05715831,0.62579589 0.1263007,0.83218728 L4.5561234,5.5484839 C4.7762742,5.7961536 5.1555176,5.818462 5.4031873,5.5983112 C5.4290771,5.5743737 5.4290771,5.5743737 5.4530146,5.5484839 L9.8801866,0.89719054 C10.0636456,0.69079916 10.0450552,0.37476297 9.8386638,0.19130396 C9.6322724,0.00784495 9.3162363,0.02643532 9.1327773,0.2328267 L5.004569,4.5477859 L0.87371002,0.16782344 Z" id="path-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

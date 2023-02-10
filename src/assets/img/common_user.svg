@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>01_Common_Btn/1_Common/common_user</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,4 C14.7614237,4 17,6.23857625 17,9 C17,10.8798987 15.9625321,12.5174837 14.4289147,13.3714368 C17.0975052,14.2236275 19,16.4878758 19,19.5 C19,19.7761424 18.7761424,20 18.5,20 C18.2238576,20 18,19.7761424 18,19.5 C18,16.1862915 15.3137085,14 12,14 C8.6862915,14 6,16.1862915 6,19.5 C6,19.7761424 5.77614237,20 5.5,20 C5.22385763,20 5,19.7761424 5,19.5 C5,16.4878758 6.90249482,14.2236275 9.5713964,13.3703712 C8.03746789,12.5174837 7,10.8798987 7,9 C7,6.23857625 9.23857625,4 12,4 Z M12,5 C9.790861,5 8,6.790861 8,9 C8,11.209139 9.790861,13 12,13 C14.209139,13 16,11.209139 16,9 C16,6.790861 14.209139,5 12,5 Z" id="path-1"></path>
+    </defs>
+    <g id="01_Common_Btn/1_Common/common_user" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Color" fill-opacity="0.7" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

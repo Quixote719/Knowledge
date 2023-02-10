@@ -1,0 +1,82 @@
+@import '~@/commonStyles/sharedStyle.less';
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    @font-family();
+
+    .header {
+        @item_font_normal();
+        height: 48px;
+        background: #1a1d24;
+        line-height: 48px;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            width: 36px;
+            cursor: pointer;
+        }
+        .title {
+            font-size: 16px;
+            @item_font_title();
+            padding: 0 8px 0 12px;
+        }
+        .rightItem {
+            cursor: pointer;
+            width: 92px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 16px;
+        }
+    }
+
+    .content {
+        @item_font_normal();
+        background: @bcgColor;
+        padding: 16px;
+        overflow: auto;
+        position: relative;
+    }
+}
+
+.loadingPage,
+.notFoundPage {
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projPopover {
+    width: 120px;
+    li {
+        height: 28px;
+        line-height: 28px;
+        padding: 0 4px;
+        display: flex;
+        font-size: 14px;
+        &:hover {
+            background: @active_color;
+        }
+        img {
+            margin-right: 5px;
+        }
+    }
+    :global {
+        .ant-popover-arrow {
+            display: none;
+        }
+        .ant-popover-inner-content {
+            padding: 0;
+        }
+        .ant-popover-placement-bottom,
+        .ant-popover-placement-bottomLeft,
+        .ant-popover-placement-bottomRight {
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="42px" viewBox="0 0 12 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>arrow_展开</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.16782344,23.4619369 L6.67408661,21.1697417 L4.16782344,18.87371 C3.96143205,18.690251 3.94284169,18.3742148 4.1263007,18.1678234 C4.3097597,17.9614321 4.62579589,17.9428417 4.83218728,18.1263007 L7.67478464,20.7212962 C7.70067444,20.7452336 7.70067444,20.7452336 7.72461193,20.7711234 C7.94476274,21.0187931 7.9224543,21.3980365 7.67478464,21.6181873 L4.83218728,24.2093462 C4.62579589,24.3928052 4.3097597,24.3742148 4.1263007,24.1678234 C3.94284169,23.9614321 3.96143205,23.6453959 4.16782344,23.4619369 Z" id="path-1"></path>
+    </defs>
+    <g id="算法训练" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03-算法训练-7" transform="translate(-337.000000, -493.000000)">
+            <g id="编组-7" transform="translate(337.000000, 117.000000)">
+                <g id="arrow_展开" transform="translate(0.000000, 376.000000)">
+                    <path d="M8,0 L12,0 L12,0 L12,42 L8,42 C3.581722,42 5.41083001e-16,38.418278 0,34 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="矩形" fill="#3E4354" fill-rule="nonzero" transform="translate(6.000000, 21.000000) scale(-1, 1) translate(-6.000000, -21.000000) "></path>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Color" fill-opacity="0.4" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

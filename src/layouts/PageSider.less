@@ -1,0 +1,27 @@
+@import '~@/commonStyles/sharedStyle.less';
+.sider {
+    background: @contentBgColor;
+    max-width: 240px !important;
+    min-width: 240px !important;
+    width: 240px !important;
+    :global {
+        .ant-menu-item {
+            padding-left: 20px !important;
+            // display: flex;
+            // align-content: center;
+            img {
+                margin-right: 20px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+:global {
+    .ant-layout-sider-collapsed {
+        max-width: 64px !important;
+        min-width: 64px !important;
+        width: 64px !important;
+    }
+}

@@ -1,0 +1,70 @@
+@import '~@/commonStyles/sharedStyle.less';
+
+.container {
+    height: 100%;
+    background: @contentBgColor;
+    padding: 20px 20px 0;
+    position: relative;
+    overflow: hidden;
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        align-items: center;
+        height: 32px;
+
+        .headerButton {
+            line-height: 32px;
+            display: inline-flex;
+            margin-right: 12px;
+            cursor: pointer;
+            img {
+                margin-right: 4px;
+            }
+        }
+    }
+    .handle {
+        img {
+            margin-right: 8px;
+        }
+    }
+    .processName {
+        color: #1890ff;
+    }
+}
+
+.form {
+    margin: 24px 68px 0;
+}
+
+.projPopover {
+    width: 63px;
+
+    ul {
+        padding: 6px 0 2px;
+    }
+    li {
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 8px;
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+            background: @active_color;
+        }
+    }
+    :global {
+        .ant-popover-arrow {
+            display: none;
+        }
+        .ant-popover-inner-content {
+            padding: 0;
+        }
+        .ant-popover-placement-bottom,
+        .ant-popover-placement-bottomLeft,
+        .ant-popover-placement-bottomRight {
+            padding: 0;
+        }
+    }
+}

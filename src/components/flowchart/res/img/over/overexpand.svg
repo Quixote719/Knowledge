@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icon_缩略图窗口展开</title>
+    <desc>Created with Sketch.</desc>
+    <g id="算法训练" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03-算法训练-2" transform="translate(-610.000000, -924.000000)">
+            <g id="icon_缩略图窗口展开" transform="translate(610.000000, 924.000000)">
+                <rect id="矩形" fill="#3E4354" fill-rule="nonzero" x="0" y="0" width="24" height="24" rx="2"></rect>
+                <g id="icon_地图窗口收起">
+                    <rect id="矩形备份" opacity="0.134300595" x="0" y="0" width="24" height="24"></rect>
+                    <path d="M7.98447297,15.3339586 L16.1534757,7.14329285 C16.3458706,6.95098525 16.6592466,6.9524269 16.8534206,7.14651287 C17.0475947,7.34059884 17.049037,7.65383271 16.8566421,7.84614031 L8.70828506,16.0161697 L14.3900668,16.0105645 C14.6634123,16.011822 14.8814795,16.2297903 14.8827376,16.5030118 C14.8839957,16.7762333 14.6634123,16.9967166 14.3900668,16.9954591 L7.49721907,17 C7.22387359,16.9987425 7.00126342,16.7762333 7,16.5030118 L7,9.60874943 C6.99874729,9.33552792 7.21933063,9.11504462 7.49267612,9.11630212 C7.76602161,9.11755962 7.98408882,9.33552792 7.98534688,9.60874943 L7.98447297,15.3339586 Z" id="Color" fill-opacity="0.7" fill="#FFFFFF" fill-rule="nonzero" transform="translate(12.000000, 12.000000) scale(-1, -1) translate(-12.000000, -12.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

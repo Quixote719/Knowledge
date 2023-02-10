@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>07_Common_Status/common_status_stop</title>
+    <defs>
+        <path d="M10,5.54167 C10,5.24251392 9.75748608,5 9.45833,5 L7.54167,5 C7.24251392,5 7,5.24251392 7,5.54167 L7,17.45833 C7,17.7574861 7.24251392,18 7.54167,18 L9.45833,18 C9.75748608,18 10,17.7574861 10,17.45833 L10,5.54167 Z M17,5.54167 C17,5.24251392 16.7574861,5 16.45833,5 L14.54167,5 C14.2425139,5 14,5.24251392 14,5.54167 L14,17.45833 C14,17.7574861 14.2425139,18 14.54167,18 L16.45834,18 C16.7574922,17.9999945 17,17.7574822 17,17.45833 L17,5.54167 Z" id="path-1"></path>
+    </defs>
+    <g id="07_Common_Status/common_status_stop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Color" fill="#FFFFFF" fill-rule="nonzero" fill-opacity="0.7" xlink:href="#path-1"></use>
+    </g>
+</svg>

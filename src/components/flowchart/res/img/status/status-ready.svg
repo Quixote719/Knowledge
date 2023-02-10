@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icon/准备执行</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/准备执行" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="矩形" opacity="0.287876674" x="0" y="0" width="16" height="16"></rect>
+            <circle id="椭圆形" fill="#FFFFFF" opacity="0.12" cx="8" cy="8" r="7"></circle>
+            <path d="M6,5.88309519 L6,10.1169048 C6,10.3930472 6.22385763,10.6169048 6.5,10.6169048 C6.59062197,10.6169048 6.67954018,10.5922759 6.75724788,10.5456513 L10.2854226,8.42874646 C10.5222127,8.28667238 10.5989952,7.97954226 10.4569211,7.74275212 C10.4146963,7.67237732 10.3557974,7.61347842 10.2854226,7.57125354 L6.75724788,5.45434873 C6.52045774,5.31227465 6.21332762,5.38905718 6.07125354,5.62584731 C6.02462892,5.70355501 6,5.79247322 6,5.88309519 Z" id="路径-2" fill="#10EE8A"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>point_nor</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="24.0916876%" y1="12.6733641%" x2="75.2824416%" y2="89.7708551%" id="linearGradient-1">
+            <stop stop-color="#60BAFA" stop-opacity="0.99012115" offset="0%"></stop>
+            <stop stop-color="#284FDB" stop-opacity="0.953945879" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="point_nor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle fill="url(#linearGradient-1)" fill-rule="nonzero" cx="4" cy="4" r="4"></circle>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+@import '~@/commonStyles/sharedStyle.less';
+
+.table {
+    @scrollBar();
+    max-height: calc(100% - 56px - 64px);
+    overflow-y: auto;
+}
+.pageination {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 56px;
+    border-top: 1px rgba(255, 255, 255, 0.2) solid;
+    background: @contentBgColor;
+    align-items: center;
+}

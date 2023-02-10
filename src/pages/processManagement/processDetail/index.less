@@ -1,0 +1,74 @@
+@import '~@/commonStyles/sharedStyle.less';
+
+@breadscrumb();
+@headerHeight: 48px;
+.container {
+    height: 100%;
+    background: @contentBgColor;
+
+    position: relative;
+    overflow: hidden;
+    header {
+        padding: 0 16px 0;
+        height: @headerHeight;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px #434650 solid;
+    }
+    article {
+        height: calc(100% - @headerHeight);
+        .column {
+            float: left;
+            height: 100%;
+        }
+        .center {
+            width: 100%;
+            background: green;
+        }
+        .left {
+            width: 256px;
+            margin-left: -100%;
+            position: relative;
+            right: 256px;
+            background: @contentBgColor;
+            border-right: 1px #0f0e0e solid;
+        }
+        .right {
+            width: 400px;
+            margin-right: -400px;
+            background: red;
+        }
+        .toggleLeft {
+            width: 12px;
+            height: 42px;
+            background: #3e4354;
+            position: absolute;
+            border-radius: 0 8px 8px 0;
+            top: calc(50% - 21px);
+            background-image: url('~@/assets/img/arrow_left.svg');
+        }
+        .toggleShowLeft {
+            background-image: url('~@/assets/img/arrow_right.svg');
+        }
+        .toggleRight {
+            width: 12px;
+            height: 42px;
+            background: #3e4354;
+            position: absolute;
+            border-radius: 8px 0 0 8px;
+            top: calc(50% - 21px);
+            right: 0;
+            background-image: url('~@/assets/img/arrow_right.svg');
+        }
+        .toggleShowRight {
+            background-image: url('~@/assets/img/arrow_left.svg');
+        }
+        .toggleFoldRight {
+            right: 400px;
+        }
+    }
+    .breadcrumbBlock {
+        padding: 10px 0;
+    }
+}

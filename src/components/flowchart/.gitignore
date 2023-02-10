@@ -1,0 +1,6 @@
+node_modules/
+build*
+temp/
+node_modules.zip
+node_modules.rar
+package-lock*

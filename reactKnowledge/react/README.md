@@ -173,7 +173,7 @@
 ###### 解决方案
      方法一：bind给btnClick显示绑定this  -->  <button onClick={this.btnClick.bind(this)}>点我</button>
      方法二：通过在构造方法中直接给this.btnClick绑定this --> 在constructor中：this.btnClick = this.btnClick.bind(this);
-     方法三：使用箭头函数 -->  btnClick = () => { console.log(this); } } 
+     方法三：使用箭头函数 -->  btnClick = {() => { console.log(this); } } 
      方案四：（推荐使用）事件监听时传入箭头函数  -->   <button onClick={() => this.btnClick()}>点我</button>
 ##### 4.2 事件参数传递
      情况一：获取event对象 --> 拿到event对象来做一些事情（比如阻止默认行为)
@@ -237,7 +237,7 @@
                 return(
                     <ul>
                         <li>姓名：{this.props.name}</li>
-                        <li>年龄：{props.age}</li>
+                        <li>年龄：{this.props.age}</li>
                     </ul>
                     )
               }

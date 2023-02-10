@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icon/运行失败</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/运行失败" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/直方图统计备份-2">
+            <g>
+                <rect id="矩形" opacity="0.287876674" x="0" y="0" width="16" height="16"></rect>
+                <circle id="椭圆形" fill="#FF5353" opacity="0.2" cx="8" cy="8" r="7"></circle>
+                <path d="M8,10 C8.55228475,10 9,10.4477153 9,11 C9,11.5522847 8.55228475,12 8,12 C7.44771525,12 7,11.5522847 7,11 C7,10.4477153 7.44771525,10 8,10 Z M8,4 C8.55228475,4 9,4.44771525 9,5 L9,8 C9,8.55228475 8.55228475,9 8,9 C7.44771525,9 7,8.55228475 7,8 L7,5 C7,4.44771525 7.44771525,4 8,4 Z" id="形状结合" fill="#FF5656"></path>
+            </g>
+        </g>
+    </g>
+</svg>

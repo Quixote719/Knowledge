@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>01_Common_Btn/1_Common/common_add</title>
+    <defs>
+        <path d="M18.5,12 L12,12 L12,18.5 C12,18.8 11.8,19 11.5,19 C11.2,19 11,18.8 11,18.5 L11,12 L4.5,12 C4.2,12 4,11.8 4,11.5 C4,11.2 4.2,11 4.5,11 L11,11 L11,4.5 C11,4.2 11.2,4 11.5,4 C11.8,4 12,4.2 12,4.5 L12,11 L18.5,11 C18.8,11 19,11.2 19,11.5 C19,11.8 18.8,12 18.5,12 Z" id="path-1"></path>
+    </defs>
+    <g id="01_Common_Btn/1_Common/common_add" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Color" fill="rgba(255, 255, 255, 0.7)" fill-rule="nonzero" opacity="0.699999988" xlink:href="#path-1"></use>
+    </g>
+</svg>

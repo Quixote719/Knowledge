@@ -1,0 +1,147 @@
+@import '~@/commonStyles/sharedStyle.less';
+
+@breadscrumb();
+@darkForm();
+@darkUpload();
+
+.pageContent {
+    position: relative;
+    padding: 20px;
+    color: @color;
+    background: @contentBgColor;
+    height: 100%;
+    overflow: auto;
+}
+
+.topSection {
+    background: @contentBgColor;
+    height: 280px;
+    padding-top: 60px;
+    padding-left: 250px;
+}
+
+.bottomSection {
+    position: absolute;
+    overflow: scroll;
+    top: 312px;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    padding-top: 40px;
+    padding-left: 240px;
+    padding-right: 240px;
+    background: @contentBgColor;
+}
+
+.cardFlexBox {
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.projectCard {
+    position: relative;
+    vertical-align: bottom;
+    padding: 24px 20px;
+    background: #0f121a;
+    margin: 10px 10px 0 0;
+    width: 340px;
+    height: 360px;
+    display: inline-block;
+    cursor: pointer;
+    .cardTitle {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .cardContent {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .actionIconBlock {
+        position: absolute;
+        bottom: 45px;
+    }
+}
+
+.FMtitle {
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 48px;
+}
+
+.FMDescription {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.filterBar {
+    margin: 25px 0;
+}
+
+.textBar {
+    display: inline-block;
+}
+
+.rightRedirectText {
+    float: right;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.iconDiv {
+    width: 34px;
+    height: 34px;
+    padding: 4px;
+    border: @border;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.breadcrumbBlock {
+    background: @contentBgColor;
+    color: @color;
+}
+
+.breadcrumbRoute {
+    cursor: pointer;
+    &:hover {
+        color: @btn_p_hover_color;
+    }
+}
+
+.formSection {
+    width: 360px;
+    padding: 10px 20px 25px 20px;
+    margin: auto;
+}
+
+.darkTabPane {
+    color: @color;
+}
+
+.formInfoIcon {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.operateBtn {
+    padding: 4px 10px;
+    display: inline-block;
+    border-radius: 2px;
+    cursor: pointer;
+    .btnImage {
+        vertical-align: bottom;
+    }
+    .btnText {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    &:hover {
+        background: lighten(#2a2d38, 10%);
+    }
+}

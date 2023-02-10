@@ -1,0 +1,139 @@
+@import '~@/commonStyles/sharedStyle.less';
+
+@breadscrumb();
+.contentSection {
+    background: @contentBgColor;
+    position: relative;
+    color: @color;
+    padding: 20px;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.breadcrumbBlock {
+    padding: 10px 20px;
+    background: @contentBgColor;
+    color: @color;
+}
+
+.breadcrumbRoute {
+    cursor: pointer;
+    &:hover {
+        color: @btn_p_hover_color;
+    }
+}
+
+.topSection {
+    background: @contentBgColor;
+    height: 220px;
+}
+
+.bottomSection {
+    position: absolute;
+    top: 252px;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    background: @contentBgColor;
+}
+
+.operateBtn {
+    padding: 4px 10px;
+    display: inline-block;
+    border-radius: 2px;
+    cursor: pointer;
+    .btnImage {
+        vertical-align: bottom;
+    }
+    .btnText {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    &:hover {
+        background: lighten(#2a2d38, 10%);
+    }
+}
+
+.searchBlock {
+    display: inline-block;
+    float: right;
+    padding-bottom: 12px;
+}
+
+.featureSelect {
+    width: 140px;
+}
+
+.hikSelect {
+    @font-family();
+    @select-dropdown();
+    @empty();
+    color: @color;
+    .suffix {
+        position: absolute;
+        left: -6px;
+        top: -6px;
+    }
+    :global {
+        .ant-select {
+            background-color: @contentBgColor;
+        }
+    }
+    :global(.ant-select-selection-item) {
+        background: transparent;
+        border: none;
+        color: @color;
+    }
+    :global(.ant-select-selection-item-remove) {
+        color: @color !important;
+    }
+    :global(.ant-select-clear) {
+        background: @contentBgColor;
+        color: @color;
+    }
+
+    :global(.ant-select-arrow) {
+        .anticon {
+            color: @color;
+        }
+    }
+
+    :global(.ant-select-selection__clear) {
+        color: @color !important;
+        background-color: @contentBgColor;
+    }
+    :global(.ant-select-selection-selected-value) {
+        color: #ffffff99;
+    }
+    :global(.ant-select-selector) {
+        border: @border !important;
+        background-color: transparent !important;
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-within {
+            border: @textBox_border_hover !important;
+            box-shadow: none !important;
+        }
+    }
+    :global(.ant-select-selection--multiple) {
+        :global(.ant-select-selection__choice) {
+            background-color: #2f2f2f;
+            color: @color;
+            border: none;
+        }
+        :global(.ant-select-selection__choice__remove) {
+            color: @color;
+        }
+    }
+    :global {
+        .ant-select-selector {
+            color: @color;
+        }
+        .ant-select-multiple {
+            .ant-select-selection-item {
+                background: rgba(255, 255, 255, 0.04);
+            }
+        }
+    }
+}

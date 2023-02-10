@@ -1,0 +1,74 @@
+@import '~@/commonStyles/sharedStyle.less';
+
+@breadscrumb();
+@switch();
+
+.dashBoardTopSection {
+    background: @contentBgColor;
+    height: 280px;
+    padding-top: 60px;
+    position: relative;
+    .updateTimeBlock {
+        position: absolute;
+        left: 15px;
+        bottom: 10px;
+    }
+}
+
+.bottomSection {
+    margin-top: 16px;
+    padding-top: 30px;
+    min-height: calc(100vh - 376px);
+    background: @contentBgColor;
+}
+
+.statisticsBar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.statisticsCard {
+    width: 200px;
+    font-weight: 'bold';
+    text-align: center;
+    font-size: 16px;
+    color: @color;
+    .stCardFigure {
+        font-family: DINAlternate-Bold;
+        font-size: 46px;
+        color: #ffffff;
+        padding-left: 22px;
+    }
+    .statisticsIcon {
+        vertical-align: top;
+        margin: 17px 4px;
+        cursor: pointer;
+    }
+}
+
+.trendSwitchBlock {
+    float: right;
+    margin-right: 70px;
+    .trendSwitchTitle {
+        display: inline-block;
+    }
+    .trendSwitch {
+        z-index: 1;
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+.seperator {
+    margin-top: 5px;
+    height: 70px;
+    border-right: 1px solid #555555;
+}
+
+.chartTitle {
+    color: @title-color;
+    font-family: MicrosoftYaHeiUI-Bold;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 30px;
+}

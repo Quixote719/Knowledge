@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>cloudshellyunminglinghang</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.082353 0 0 0 0 0.917647 0 0 0 0 0.792157 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="08-流程管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-流程管理-创建流程-流程画布" transform="translate(-275.000000, -240.000000)">
+            <g id="编组-3" transform="translate(256.000000, 112.000000)">
+                <g id="cloudshellyunminglinghang" transform="translate(0.000000, 119.000000)" filter="url(#filter-1)">
+                    <g transform="translate(19.000000, 9.000000)">
+                        <path d="M15.9493711,12.727673 L0.00974842767,12.727673 L0.00974842767,0.00817610063 L15.9393082,0.00817610063 L15.9493711,12.727673 L15.9493711,12.727673 Z M1.58962264,11.1477987 L14.3795597,11.1477987 L14.3795597,1.58805031 L1.58962264,1.58805031 L1.58962264,11.1477987 Z" id="形状" fill="#707070" fill-rule="nonzero"></path>
+                        <path d="M4.65880503,9.05471698 L3.55188679,7.94779874 L5.2827044,6.21698113 L3.55188679,4.47610063 L4.65880503,3.3591195 L7.50660377,6.20691824 L4.65880503,9.05471698 Z M7.87893082,7.80691824 L12.4072327,7.80691824 L12.4072327,9.37672956 L7.87893082,9.37672956 L7.87893082,7.80691824 Z" id="形状" fill="#707070" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

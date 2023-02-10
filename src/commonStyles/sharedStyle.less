@@ -1,0 +1,290 @@
+//此文件为公共样式和脱离文档流的一些组件的样式集合
+/*************以下定义当前项目的主题颜色、宽高等变量***************/
+@bcgColor: #0f0e0e; //页面背景色
+@contextMenu-bgc: #1f232b; //弹窗背景色
+@contentBgColor: #2a2d38; // 内容区域背景色
+@dropdownBgColor: #1a1d24; // 下拉菜单背景色
+
+@title-color: rgba(255, 255, 255, 0.9); // 标题字体颜色
+@color: rgba(255, 255, 255, 0.7); // 字体颜色
+@disabled-color: rgba(255, 255, 255, 0.2); // 字体禁用颜色
+@light_color: rgba(255, 255, 255, 0.9); // 显示字体颜色
+@hover_color: rgba(255, 255, 255, 0.9); // 字体hover颜色
+@danger_color: #f73748; // 提示及必填颜色
+@active_color: #4863e4; // 激活状态颜色
+@border: 1px solid rgba(255, 255, 255, 0.3);
+// 常规字体
+@item_font_normal: {
+    color: rgba(255, 255, 255, 0.7);
+};
+// 标题字体
+@item_font_title: {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 700;
+};
+
+@font-family: {
+    font-family: 'MicrosoftYaHei', 'Segoe UI';
+};
+
+// 一些默认主题色
+@theme_color: #4863e4;
+@theme_hover_color: #6c82e9;
+@theme_click_color: #4059cd;
+@theme_disabled_color: rgba(255, 255, 255, 0.08);
+@theme_border_color: rgba(255, 255, 255, 0.3);
+
+@theme_info_color: #2196f3;
+@theme_success_color: #58d260;
+@theme_warning_color: #ff952c;
+@theme_error_color: #f73748;
+
+@theme_font_color: #fff;
+
+@default_font_color: rgba(255, 255, 255, 0.7);
+@default_font_disabled_color: rgba(255, 255, 255, 0.2);
+
+@default_border_color: rgba(0, 0, 0, 0.2);
+@default_border_disabled_color: rgba(255, 255, 255, 0.3);
+
+@textBox-border: 1px solid #4c4c4c !important;
+@input-border: {
+    border: @textBox-border;
+    box-shadow: none;
+};
+
+/* 暗色主题 按钮样式 统一 以下 */
+// 默认按钮
+@btn_color: #1f232b;
+@btn_hover_color: #2c3037;
+@btn_click_color: #3a3e45;
+@btn_disabled_color: rgba(255, 255, 255, 0.04);
+
+@btn_font_color: rgba(255, 255, 255, 0.7);
+@btn_font_disabled_color: rgba(255, 255, 255, 0.4);
+
+@btn_border_color: rgba(255, 255, 255, 0.2);
+@btn_border_disabled_color: rgba(255, 255, 255, 0.08);
+// primary按钮
+@btn_p_color: #4863e4;
+@btn_p_hover_color: #6c82e9;
+@btn_p_click_color: #4059cd;
+@btn_p_disabled_color: rgba(72, 99, 228, 0.4);
+
+@btn_p_font_color: rgba(255, 255, 255, 0.7);
+@btn_p_font_disabled_color: rgba(255, 255, 255, 0.4);
+
+@btn_p_border_color: rgba(255, 255, 255, 0);
+@btn_p_border_disabled_color: rgba(255, 255, 255, 0);
+/* 暗色主题 按钮样式 统一 以上 */
+
+/* 暗色主题 (输入框、文本域、下拉选择框、日期选择框、时间选择框) (border font-color) 统一 以下 */
+@textBox_border_default: 1px solid rgba(255, 255, 255, 0.3);
+@textBox_border_hover: 1px solid rgba(255, 255, 255, 0.7);
+@textBox_border_click: 1px solid rgba(255, 255, 255, 0.9);
+@textBox_border_disabled: 1px solid rgba(255, 255, 255, 0.08);
+@textBox_border_error: 1px solid #e81123;
+
+@textBox_font_color: rgba(255, 255, 255, 0.7);
+@textBox_font_hover_color: rgba(255, 255, 255, 0.3);
+@textBox_font_click_color: rgba(255, 255, 255, 0.9);
+@textBox_font_disabled_color: rgba(255, 255, 255, 0.2);
+@textBox_font_error_color: rgba(255, 255, 255);
+/* 暗色主题 (输入框、文本域、下拉选择框、日期选择框、时间选择框) (border font-color) 统一 以上 */
+
+/* 暗色主题 select-dropdown 多选框选中标签 统一 以下 */
+@dropdown_color: #1a1d24;
+@dropdown_hover_color: rgba(50, 53, 63);
+@selection_choice_color: rgb(47, 51, 59);
+/* 暗色主题 select-dropdown 多选框选中标签 统一 以上 */
+
+@empty: {
+    :global(.ant-empty-normal) {
+        color: @color;
+    }
+    :global(.ant-empty-description) {
+        color: @color;
+    }
+};
+
+@scrollBar: {
+    // 滚动条外层轨道 内阴影+圆角
+    &::-webkit-scrollbar-track {
+        //box-shadow: 0 0 0 5px #464f70 inset;
+        border-radius: 4px !important;
+        //width: 8px;
+        //margin: 2px;
+        transition: background-color 1s linear;
+        background-color: transparent !important; //未生效？
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2) !important;
+        }
+    }
+    // 滚动条  高宽及背景 高宽分别对应横竖滚动条的尺寸
+    &::-webkit-scrollbar {
+        width: 4px !important; // y
+        height: 4px !important; // x
+
+        background-color: transparent !important;
+    }
+    // 定义滑块 内阴影+圆角
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px !important;
+        //box-shadow: 0 0 0 5px #464f70 inset;
+        transition: background-color 1s linear; //未生效？
+        background-color: rgba(255, 255, 255, 0.2) !important;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3) !important;
+        }
+        &:active {
+            background-color: rgba(255, 255, 255, 0.4) !important;
+        }
+    }
+
+    // 边角
+    &::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+};
+
+@select-dropdown: {
+    @empty();
+    :global(.ant-select-dropdown),
+    :global(.ant-select-tree) {
+        color: @color;
+        background-color: @dropdownBgColor;
+
+        :global(.ant-select-item-option) {
+            color: @color;
+        }
+        :global(.ant-select-item-option-active),
+        :global(.ant-select-tree-node-active) {
+            background-color: #22252c;
+            &:hover {
+                background-color: #22252c;
+            }
+        }
+        :global {
+            .ant-select-item-option-disabled {
+                color: @disabled-color;
+            }
+        }
+        :global(.ant-select-item-option-selected),
+        :global(.ant-select-tree-node-selected) {
+            background-color: #4863e4 !important;
+            &:hover {
+                background-color: #4863e4;
+            }
+        }
+        :global(.ant-select-tree-node-content-wrapper) {
+            &:hover {
+                background-color: #22252c;
+            }
+        }
+        :global(.ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled)) {
+            background-color: lighten(@dropdownBgColor, 30%);
+        }
+    }
+    :global(.ant-select-dropdown-search) {
+        border-color: rgba(255, 255, 255, 0.5) !important;
+        background: transparent !important;
+        color: rgba(255, 255, 255, 0.3) !important;
+        :global(.ant-select-search__field) {
+            color: #ffffff99 !important;
+            //height: 32px !important;
+            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+            border-radius: 2px;
+            background-color: transparent !important;
+            @scrollBar();
+        }
+    }
+    // 树选择框内部样式
+    :global {
+        .ant-select-tree-checkbox-inner {
+            background-color: transparent !important;
+            border-color: rgba(255, 255, 255, 0.5);
+            color: rgba(255, 255, 255, 0.3);
+            &:hover {
+                border-color: rgba(255, 255, 255, 0.7);
+            }
+            &::after {
+                border-color: #1890ff;
+            }
+        }
+        .ant-select-tree-checkbox {
+            &-checked {
+                .ant-select-tree-checkbox-inner {
+                    border-color: rgba(255, 255, 255, 0.5);
+                }
+                &:hover ::after {
+                    border-color: #1890ff;
+                }
+                &::after {
+                    border-color: rgba(255, 255, 255, 0.7);
+                }
+            }
+            &-disabled {
+                .ant-select-tree-checkbox-inner {
+                    border-color: rgba(255, 255, 255, 0.3) !important;
+                }
+            }
+        }
+    }
+};
+@spin: {
+    :global(.ant-spin-nested-loading > div > .ant-spin .ant-spin-text) {
+        text-shadow: none;
+    }
+};
+
+@breadscrumb: {
+    :global(.ant-breadcrumb),
+    :global(.ant-breadcrumb a),
+    :global(.ant-breadcrumb-separator),
+    :global(.ant-breadcrumb-link) {
+        color: @color;
+        cursor: pointer;
+    }
+};
+
+@darkForm: {
+    :global(.ant-form) {
+        color: @color;
+    }
+    :global(.ant-form-item-label > label) {
+        color: @color;
+    }
+    :global(.ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before) {
+        display: none;
+    }
+    :global(.ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::after) {
+        display: inline-block;
+        margin-left: 4px;
+        color: #ff4d4f;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: '*';
+    }
+};
+
+@darkUpload: {
+    :global(.ant-upload-list-item-info .ant-upload-text-icon .anticon),
+    :global(.ant-upload-list-item-name) {
+        color: @color;
+    }
+    :global(.ant-upload-list-item:hover .ant-upload-list-item-info) {
+        background: lighten(@contentBgColor, 20%) !important;
+    }
+};
+
+@switch: {
+    :global(.ant-switch-checked) {
+        background: @active_color;
+    }
+};
+
+@scrollBar();
+@select-dropdown();
+@spin();
